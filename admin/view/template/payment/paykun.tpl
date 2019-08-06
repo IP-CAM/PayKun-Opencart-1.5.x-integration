@@ -23,9 +23,7 @@
     <div class="content">
         <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" id="form-paykun" class="form-horizontal">
 
-            <ul class="nav nav-tabs">
-                <li class="active"><a href="#tab-general" data-toggle="tab"><?php echo $tab_general; ?></a></li>
-            </ul>
+
             <table class="form">
                 <tr>
                     <td><label class="control-label col-sm-3" for="is_enabled">

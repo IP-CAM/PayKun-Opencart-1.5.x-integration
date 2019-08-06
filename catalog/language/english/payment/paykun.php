@@ -6,7 +6,7 @@ $_['heading_title']     		      = 'Thank you for shopping with %s .... ';
 $_['button_confirm']    		      = 'Confirm Order';
 
 // Text
-$_['text_title']        		      = 'PayKun';
+$_['text_title']        		      = 'Pay via Cards/Net-Banking/UPI/Wallets/QR Code with PayKun';
 $_['text_response']     		      = 'Response from paykun: %s';
 
 $_['text_success']                  = 'Your payment has been successfully received.';

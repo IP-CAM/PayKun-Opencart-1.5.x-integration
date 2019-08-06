@@ -59,7 +59,7 @@ class ControllerPaymentpaykun extends Controller {
         $this->data['text_php_version'] 			= $this->language->get('text_php_version');
         $this->data['text_last_updated'] 		= $this->language->get('text_last_updated');
         $this->data['text_curl_disabled'] 		= $this->language->get('text_curl_disabled');
-        $this->data['tab_general']				=$this->language->get('tab_general');
+        //$this->data['tab_general']				=$this->language->get('tab_general');
         $this->data['paykun_status']			= $this->language->get('paykun_status');
 
         $this->data['paykun_merchant_id'] 		= $this->language->get('paykun_merchant_id');
@@ -122,25 +122,6 @@ class ControllerPaymentpaykun extends Controller {
         } else {
             $this->data['error_transaction_url'] = '';
         }
-
-        // if (isset($this->error['transaction_status_url'])) {
-        // 	$this->data['error_transaction_status_url'] = $this->error['transaction_status_url'];
-        // } else {
-        // 	$this->data['error_transaction_status_url'] = '';
-        // }
-
-        // if (isset($this->error['callback_url_status'])) {
-        // 	$this->data['error_callback_url_status'] = $this->error['callback_url_status'];
-        // } else {
-        // 	$this->data['error_callback_url_status'] = '';
-        // }
-
-        // if (isset($this->error['callback_url'])) {
-        // 	$this->data['error_callback_url'] = $this->error['callback_url'];
-        // } else {
-        // 	$this->data['error_callback_url'] = '';
-        // }
-
         $this->data['breadcrumbs'] = array();
 
         $this->data['breadcrumbs'][] = array(
@@ -256,20 +237,11 @@ class ControllerPaymentpaykun extends Controller {
             $this->data['paykun_total'] = $this->config->get('paykun_total');
         }
 
-        // if (isset($this->request->post['paykun_geo_zone_id'])) {
-        // 	$this->data['paykun_geo_zone_id'] = $this->request->post['paykun_geo_zone_id'];
-        // } else {
-        // 	$this->data['paykun_geo_zone_id'] = $this->config->get('paykun_geo_zone_id');
-        // }
-
-        // $this->load->model('localisation/geo_zone');
-        // $this->data['geo_zones'] = $this->model_localisation_geo_zone->getGeoZones();
-
-        // if (isset($this->request->post['paykun_status'])) {
-        // 	$this->data['paykun_status'] = $this->request->post['paykun_status'];
-        // } else {
-        // 	$this->data['paykun_status'] = $this->config->get('paykun_status');
-        // }
+        if (isset($this->request->post['paykun_log_status'])) {
+            $this->data['paykun_log_status'] = $this->request->post['paykun_log_status'];
+        } else {
+            $this->data['paykun_log_status'] = $this->config->get('paykun_log_status');;
+        }
 
         if (isset($this->request->post['paykun_sort_order'])) {
             $this->data['paykun_sort_order'] = $this->request->post['paykun_sort_order'];

@@ -1,6 +1,6 @@
 <?php
 // Heading
-$_['heading_title']     		            = 'paykun Payments';
+$_['heading_title']     		            = 'PayKun Payments';
 
 // Text
 $_['text_payment']      		            = 'Payment';
@@ -12,7 +12,7 @@ $_['text_opencart_version'] 	            = 'Opencart Version';
 $_['text_curl_version'] 		            = 'cURL Version';
 $_['text_php_version']  		            = 'PHP Version';
 $_['text_last_updated'] 		            = 'Last Updated';
-$_['text_curl_disabled']   	            = 'cURL is not enabled properly. Please verify.';
+$_['text_curl_disabled']   	                = 'cURL is not enabled properly. Please verify.';
 //tab
 $_['tab_general'] = 'General';
 $_['tab_order_status'] = 'Order Status';

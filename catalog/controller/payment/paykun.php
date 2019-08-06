@@ -287,8 +287,6 @@ class ControllerPaymentPaykun extends Controller {
 
     }
 
-
-
     public function callbackFailed() {
 
         try {
